@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: calc(25% - 20px);
+            /* 4 cards in a row on desktop */
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .card {
+                width: calc(50% - 20px);
+                /* 2 cards in a row on tablet */
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .card {
+                width: 100%;
+                /* 1 card in a row on mobile */
+            }
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-name {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .price {
+            color: #009688;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <div class="cards-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 1</div>
+                <div class="price">₹19.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 2</div>
+                <div class="price">₹24.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 3</div>
+                <div class="price">₹29.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 4</div>
+                <div class="price">₹14.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 5</div>
+                <div class="price">₹19.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 6</div>
+                <div class="price">₹24.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 7</div>
+                <div class="price">₹29.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 8</div>
+                <div class="price">₹14.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 9</div>
+                <div class="price">₹19.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 10</div>
+                <div class="price">₹24.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 11</div>
+                <div class="price">₹29.99</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+                <div class="product-name">Product 12</div>
+                <div class="price">₹14.99</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>My Web Page. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
